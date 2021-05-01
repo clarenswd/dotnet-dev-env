@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    local-dev:
+        build:
+            context: .
+        working_dir: /app
+        volumes:
+            - "..:/app"
+        command: sleep infinity
